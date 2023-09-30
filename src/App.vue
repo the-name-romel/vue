@@ -9,4 +9,8 @@ const input = ref('Hi')
         <option value="design">design</option>
     </select>
     <p>p: {{ input }}</p>
+
+    <!-- Conditional--> 
+    <p v-if="input == 'web'"> Web Development</p>
+    <p v-else="input == 'design'"> Designing</p>
 </template>
